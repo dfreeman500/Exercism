@@ -16,11 +16,10 @@ public static class Isogram
         // if they are different than some letter is duplicated.
 
         
-        if (arraySet.Count == word.Length){
-            return true;
-        } 
-        else{
-            return false;
-        }
+        return arraySet.Count == word.Length;
     }
 }
+
+
+//A very elegant solution using Linq is here : 
+// https://exercism.org/tracks/csharp/exercises/isogram/solutions/ErikSchierboom
